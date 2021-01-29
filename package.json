@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage":"https://jaeyoungahn12.github.io/artx_web/",
   
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --hot"
+    "start": "webpack-dev-server --hot",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
     
   },
   "keywords": [],
